@@ -18,7 +18,6 @@ function clicked(element) {
 function evaluate(exp) {
   
  function init() {
-  //let initial = exp;
   var digitsArray = [],
    opsArray = [];
    exp = exp.replace(/(\d+)\%/g,(match,g1)=> g1/100);
@@ -42,7 +41,7 @@ function evaluate(exp) {
      v[0].splice(i + 1, 1);
      v[1].splice(i, 1);
     }
-    if (v[1][i] == "/" v[1][i] == "÷") {
+    if (v[1][i] == "/" || v[1][i] == "÷") {
      v[0][i] = Number(v[0][i]) / Number(v[0][i + 1]);
      v[0].splice(i + 1, 1);
      v[1].splice(i, 1);
