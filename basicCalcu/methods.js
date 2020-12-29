@@ -15,7 +15,7 @@ function evaluate(exp) {
  function init() {
   var digitsArray = [],
    opsArray = [];
-  exp = exp.replace(/(\d+)\%/g, (match, g1) => g1 / 100);
+exp = exp.replace(/(\d+)\%/g,(match,g1)=> g1/100);
   var dgt = /(^-)?\d+/g,
    digitMatch,
    opsMatch;
