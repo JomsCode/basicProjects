@@ -18,7 +18,7 @@ function clicked(element) {
 function evaluate(exp) {
   
  function init() {
-   let initial = exp;
+  //let initial = exp;
   var digitsArray = [],
    opsArray = [];
    exp = exp.replace(/(\d+)\%/g,(match,g1)=> g1/100);
@@ -37,7 +37,7 @@ function evaluate(exp) {
   let v = [...input];
   for (let i = 0; i < v[1].length; i++) {
    while (v[1][i] == "x" || v[1][i] == "/" || v[1][i] == "÷" || v[1][i] == "*") {
-    if (v[1][i] == "x" || v[1][I] == "*") {
+    if (v[1][i] == "x" || v[1][i] == "*") {
      v[0][i] = Number(v[0][i]) * Number(v[0][i + 1]);
      v[0].splice(i + 1, 1);
      v[1].splice(i, 1);
